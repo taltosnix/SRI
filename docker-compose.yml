@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  asir_htdocs2:
+    image: internetsystemsconsortium/bind9:9.16
+    ports:
+    - "5353:53"
+    volumes:
+    - config:/etc/bind
+volumes:
+  config:
